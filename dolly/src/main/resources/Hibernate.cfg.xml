@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.h2.Driver</property>
+        <property name="hibernate.connection.url">jdbc:h2:~/test</property>
+        <property name="hibernate.connection.username">sa</property>
+        <property name="hibernate.connection.password">sa@123</property>
+        
+        
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.H2Dialect</property>
+
+       <mapping class="com.niit.Product"></mapping>
+    </session-factory>
+</hibernate-configuration>
+
